@@ -58,7 +58,7 @@ class _TasksPageState extends State<TasksPage> {
             trailing: task.done
                 ? Icon(
               Icons.check_box_outlined,
-              color: Colors.green,
+              color: Colors.amberAccent,
             )
                 : Icon(Icons.check_box_outline_blank),
             onTap: () {
