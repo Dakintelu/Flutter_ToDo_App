@@ -22,20 +22,20 @@ class _IntroPageState extends State<IntroPage> {
               onPageChanged: (index) {
                 setState(() {
                   onLastPage = (index == 2);
-                  print("$index, $onLastPage");
+                  // print("$index, $onLastPage");
                 });
               },
               children: [
                 Container(
-                  color: Colors.yellow,
+                  color: Colors.teal,
                   child: Image.asset('assets/images/sleep.png'),
                 ),
                 Container(
-                  color: Colors.yellow,
+                  color: Colors.blueGrey,
                   child: Image.asset('assets/images/exercise.png'),
                 ),
                 Container(
-                  color: Colors.yellow,
+                  color: Colors.blue,
                   child: Image.asset('assets/images/work.png'),
                 )
               ],
@@ -58,7 +58,7 @@ class _IntroPageState extends State<IntroPage> {
                     controller: _controller,
                     count: 3,
                     effect: SwapEffect(
-                        dotColor: Colors.blue,
+                        dotColor: Colors.tealAccent,
                         activeDotColor: Colors.white,
                         type: SwapType.yRotation),
                   ),

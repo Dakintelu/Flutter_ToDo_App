@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-
 import '../models/task.dart';
 import 'month.dart';
 
@@ -13,14 +12,16 @@ class TasksPage extends StatefulWidget {
 }
 
 class _TasksPageState extends State<TasksPage> {
-  double? _deviceHeight, _deviceWidth;
+  double? _deviceHeight,deviceWidth;
   String? content;
   Box? _box;
+
+
 
   @override
   Widget build(BuildContext context) {
     _deviceHeight = MediaQuery.of(context).size.height;
-    _deviceWidth = MediaQuery.of(context).size.width;
+    deviceWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: _deviceHeight! * 0.1,
