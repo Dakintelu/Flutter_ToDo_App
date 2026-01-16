@@ -28,15 +28,15 @@ class _IntroPageState extends State<IntroPage> {
               children: [
                 Container(
                   color: Colors.teal,
-                  child: Image.asset('assets/images/sleep.png'),
+                  child: Image.asset('assets/sleep.png'),
                 ),
                 Container(
                   color: Colors.blueGrey,
-                  child: Image.asset('assets/images/exercise.png'),
+                  child: Image.asset('assets/exercise.png'),
                 ),
                 Container(
                   color: Colors.blue,
-                  child: Image.asset('assets/images/work.png'),
+                  child: Image.asset('assets/work.png'),
                 )
               ],
             ),
